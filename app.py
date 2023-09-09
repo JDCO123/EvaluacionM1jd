@@ -3,11 +3,8 @@ notas_estudiantes = {
     'Maria': [4.2, 3.5, 4.3],
     'Pedro': [3.9, 2.5, 4.8]
 }
-
-def calcular_prom(notas):
-    return sum(notas) / len(notas)
-
-for est, notas in notas_estudiantes.items():
-    prom = calcular_prom(notas)
-    print(f"El promedio de {est} es: {prom} ")
-    
+for nombre, listaNotas in notas_estudiantes.items():
+    suma = 0
+    for nota in listaNotas:
+        suma = suma + nota
+        print(nombre, suma / len(listaNotas))
