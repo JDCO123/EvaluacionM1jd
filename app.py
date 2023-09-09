@@ -4,10 +4,10 @@ notas_estudiantes = {
     'Pedro': [3.9, 2.5, 4.8]
 }
 
-def calcular_promedios(notas):
+def calcular_prom(notas):
     return sum(notas) / len(notas)
 
-for estudiantes, notas in notas_estudiantes.items():
-    promedio = calcular_promedios(notas)
-    print(f"El promedio de {estudiantes} es: {promedio} ")
+for est, notas in notas_estudiantes.items():
+    prom = calcular_prom(notas)
+    print(f"El promedio de {est} es: {prom} ")
     
